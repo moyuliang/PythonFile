@@ -10,7 +10,7 @@ url = url.replace('swagger-ui.html', 'v2/api-docs')
 
 r = requests.get(url)
 # 获取访问的host和basePath
-basePath = str(json.loads(r.text)['host'] + json.loads(r.text)['basePath'])[0, -1]
+basePath = str(json.loads(r.text)['host'] + json.loads(r.text)['basePath'])[0:-1]
 
 # 获取所有的uri
 paths = json.loads(r.text)['paths']
