@@ -1,5 +1,5 @@
 # PythonFile
-主要是提供一些以python写的工作中用的小工具。
+主要是记录一些以python写的工作中用的小工具。
 
 - **text_add_quote.py**：
 
@@ -23,7 +23,7 @@
 
   操作方法：
 
-  1. 在input/id.txt中录入多行id并保存
+  1. 在input/id.txt中录入多行字符串并保存
   2. 运行该方法
   3. 查看生成的output/id_add_quote.txt文件
 
@@ -34,19 +34,12 @@
   操作方法：
 
   1. 运行该方法
-
   2. 在debug日志中复制Preparing后的参数化sql，例如：
-
      `select * from t_bus_user where id in (?,?) and create_time= ? and money = ? order by id limit ?`
-
   3. 粘贴到运行窗口，按下回车
-
   4. 在debug日志中复制Parameters后的参数，例如：
-
      `1(String), 2(String), 2021-03-01 00:00:00.0(Timestamp), 8569874(BigDecimal), 10(Integer)`
-
   5. 粘贴到运行窗口，按下回车
-
   6. 提示拼接完毕并放入剪贴板后，即可直接在Navicat中Ctrl+V粘贴使用
 
 - **swagger2excel.py**：一个将剪贴板中swagger接口导出到Excel中的工具，生成文件output/api.xls
