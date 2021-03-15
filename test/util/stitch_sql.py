@@ -18,7 +18,7 @@ def stitch_sql(preparing, parameters):
         # 如果参数末尾的数据类型不在数字类型列表中，则去掉类型并加上单引号
         try:
             if str(lists[i]).lower() == "null":
-                continue;
+                continue
             elif str(re.search(r'''\((\w*)\)$''', lists[i]).group(1)).lower() not in [type1.lower() for type1 in
                                                                                       typelist]:
                 lists[i] = "'" + re.sub(r'''\((\w*)\)$''', "", lists[i]) + "'"
